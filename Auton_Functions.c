@@ -40,6 +40,7 @@ void sMove(int speed, int amountOfPorts, S_PORTS port1, S_PORTS port2 = NONE, S_
     case PORT_10:
       motor[port10] = speed;
       break;
+    }
 
     case 9:
 
@@ -74,6 +75,7 @@ void sMove(int speed, int amountOfPorts, S_PORTS port1, S_PORTS port2 = NONE, S_
     case PORT_10:
       motor[port10] = speed;
       break;
+    }
 
     case 8:
 
@@ -108,6 +110,7 @@ void sMove(int speed, int amountOfPorts, S_PORTS port1, S_PORTS port2 = NONE, S_
     case PORT_10:
       motor[port10] = speed;
       break;
+    }
 
     case 7:
 
@@ -142,6 +145,7 @@ void sMove(int speed, int amountOfPorts, S_PORTS port1, S_PORTS port2 = NONE, S_
     case PORT_10:
       motor[port10] = speed;
       break;
+    }
 
     case 6:
 
@@ -176,6 +180,7 @@ void sMove(int speed, int amountOfPorts, S_PORTS port1, S_PORTS port2 = NONE, S_
     case PORT_10:
       motor[port10] = speed;
       break;
+    }
 
     case 5:
 
@@ -210,6 +215,7 @@ void sMove(int speed, int amountOfPorts, S_PORTS port1, S_PORTS port2 = NONE, S_
     case PORT_10:
       motor[port10] = speed;
       break;
+    }
 
     case 4:
 
@@ -244,6 +250,7 @@ void sMove(int speed, int amountOfPorts, S_PORTS port1, S_PORTS port2 = NONE, S_
     case PORT_10:
       motor[port10] = speed;
       break;
+    }
 
     case 3:
 
@@ -278,6 +285,7 @@ void sMove(int speed, int amountOfPorts, S_PORTS port1, S_PORTS port2 = NONE, S_
     case PORT_10:
       motor[port10] = speed;
       break;
+    }
 
     case 2:
 
@@ -312,6 +320,7 @@ void sMove(int speed, int amountOfPorts, S_PORTS port1, S_PORTS port2 = NONE, S_
     case PORT_10:
       motor[port10] = speed;
       break;
+    }
 
     case 1:
 
@@ -346,6 +355,7 @@ void sMove(int speed, int amountOfPorts, S_PORTS port1, S_PORTS port2 = NONE, S_
     case PORT_10:
       motor[port10] = speed;
       break;
+    }
 
   }
 }
