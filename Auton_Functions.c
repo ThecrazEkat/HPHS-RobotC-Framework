@@ -2,16 +2,18 @@
 
 void sMove(int speed, int amountOfPorts, S_PORTS port1, S_PORTS port2 = NONE, S_PORTS port3 = NONE, S_PORTS port4 = NONE, S_PORTS port5 = NONE) {
   switch(amountOfPorts) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-    case 9:
+    default:
+      printf("Error: Incorrect syntax.");
     case 10:
+    case 9:
+    case 8:
+    case 7:
+    case 6:
+    case 5:
+    case 4:
+    case 3:
+    case 2:
+    case 1:
   }
   switch(port1) {
     case PORT_1:
