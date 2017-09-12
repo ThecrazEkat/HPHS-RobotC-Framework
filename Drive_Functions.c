@@ -1,5 +1,4 @@
-//All custom functions will begin with a lower	break;
-				case s
+//All custom functions will begin with a lowercase s
 
 /********************************************
                     WIP
