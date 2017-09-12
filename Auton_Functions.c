@@ -1,7 +1,7 @@
 //All custom functions will begin with a lowercase s
 #include "Defines.c"
 
-void sMoveMin(int speed, int amountOfPorts, S_PORTS port1, S_PORTS port2, S_PORTS port3, S_PORTS port4, S_PORTS port5) {
+void sMove(int speed, int amountOfPorts, S_PORTS port, ...) {
   switch(amountOfPorts) {
 
     default:
