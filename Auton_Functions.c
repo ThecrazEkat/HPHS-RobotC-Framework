@@ -1,7 +1,7 @@
 //All custom functions will begin with a lowercase s
 #include "Defines.c"
 
-void sMove(int speed, int amountOfPorts, S_PORT port1, S_PORT port2, S_PORT port3, S_PORT port4) {
+void sMove(int speed, int amountOfPorts, S_PORT port_1, S_PORT port_2, S_PORT port_3, S_PORT port_4) {
   switch(amountOfPorts) {
 
     default:
@@ -11,7 +11,7 @@ void sMove(int speed, int amountOfPorts, S_PORT port1, S_PORT port2, S_PORT port
 
     case 4:
 
-      switch(port4) {
+      switch(port_4) {
         case PORT_1:
           motor[port1] = speed;
           break;
@@ -28,7 +28,7 @@ void sMove(int speed, int amountOfPorts, S_PORT port1, S_PORT port2, S_PORT port
 
     case 3:
 
-      switch(port3) {
+      switch(port_3) {
         case PORT_1:
           motor[port1] = speed;
           break;
@@ -45,7 +45,7 @@ void sMove(int speed, int amountOfPorts, S_PORT port1, S_PORT port2, S_PORT port
 
     case 2:
 
-      switch(port2) {
+      switch(port_2) {
         case PORT_1:
           motor[port1] = speed;
           break;
@@ -62,7 +62,7 @@ void sMove(int speed, int amountOfPorts, S_PORT port1, S_PORT port2, S_PORT port
 
     case 1:
 
-      switch(port1) {
+      switch(port_1) {
         case PORT_1:
           motor[port1] = speed;
           break;
