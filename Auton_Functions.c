@@ -155,4 +155,5 @@ void sMove(int speed, int amountOfPorts, S_PORT port_1, S_PORT port_2, S_PORT po
       }
 
   }
-}
+} // SYNTAX: sMove(int, int, S_PORT, S_PORT, S_PORT, S_PORT)
+  // OUTPUT: {motor[S_PORT] = int}*int
