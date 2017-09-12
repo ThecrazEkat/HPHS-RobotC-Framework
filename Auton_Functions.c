@@ -24,6 +24,24 @@ void sMove(int speed, int amountOfPorts, S_PORT port_1, S_PORT port_2, S_PORT po
         case PORT_4:
           motor[port4] = speed;
           break;
+        case PORT_5:
+          motor[port5] = speed;
+          break;
+        case PORT_6:
+          motor[port6] = speed;
+          break;
+        case PORT_7:
+          motor[port7] = speed;
+          break;
+        case PORT_8:
+          motor[port8] = speed;
+          break;
+        case PORT_9:
+          motor[port9] = speed;
+          break;
+        case PORT_10:
+          motor[port10] = speed;
+          break;
       }
 
     case 3:
@@ -40,6 +58,24 @@ void sMove(int speed, int amountOfPorts, S_PORT port_1, S_PORT port_2, S_PORT po
           break;
         case PORT_4:
           motor[port4] = speed;
+          break;
+        case PORT_5:
+          motor[port5] = speed;
+          break;
+        case PORT_6:
+          motor[port6] = speed;
+          break;
+        case PORT_7:
+          motor[port7] = speed;
+          break;
+        case PORT_8:
+          motor[port8] = speed;
+          break;
+        case PORT_9:
+          motor[port9] = speed;
+          break;
+        case PORT_10:
+          motor[port10] = speed;
           break;
       }
 
@@ -58,6 +94,24 @@ void sMove(int speed, int amountOfPorts, S_PORT port_1, S_PORT port_2, S_PORT po
         case PORT_4:
           motor[port4] = speed;
           break;
+        case PORT_5:
+          motor[port5] = speed;
+          break;
+        case PORT_6:
+          motor[port6] = speed;
+          break;
+        case PORT_7:
+          motor[port7] = speed;
+          break;
+        case PORT_8:
+          motor[port8] = speed;
+          break;
+        case PORT_9:
+          motor[port9] = speed;
+          break;
+        case PORT_10:
+          motor[port10] = speed;
+          break;
       }
 
     case 1:
@@ -74,6 +128,24 @@ void sMove(int speed, int amountOfPorts, S_PORT port_1, S_PORT port_2, S_PORT po
           break;
         case PORT_4:
           motor[port4] = speed;
+          break;
+        case PORT_5:
+          motor[port5] = speed;
+          break;
+        case PORT_6:
+          motor[port6] = speed;
+          break;
+        case PORT_7:
+          motor[port7] = speed;
+          break;
+        case PORT_8:
+          motor[port8] = speed;
+          break;
+        case PORT_9:
+          motor[port9] = speed;
+          break;
+        case PORT_10:
+          motor[port10] = speed;
           break;
       }
 
