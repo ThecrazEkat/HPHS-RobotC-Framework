@@ -1,5 +1,6 @@
 typedef enum {
   NO_PORT = 0,
+
   PORT_1,
   PORT_2,
   PORT_3,
@@ -13,26 +14,15 @@ typedef enum {
 } S_PORT;
 
 typedef enum {
-  NO_BUTTON = 0,
+  NO_JOY = 0,
 
   CH_1,
   CH_2,
   CH_3,
   CH_4,
+} S_JOYSTICK
 
-  BTN_7U,
-  BTN_7R,
-  BTN_7D,
-  BTN_7L,
-
-  BTN_8U,
-  BTN_8R,
-  BTN_8D,
-  BTN_8L,
-
-  BTN_5U,
-  BTN_5D,
-
-  BTN_6U,
-  BTN_6D
-} S_CONTROLLER_BUTTON
+typedef enum {
+  DEFAULT = 0,
+  SLOW
+} S_CONTROL_ARG
