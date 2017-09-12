@@ -1,4 +1,9 @@
 //All custom functions will begin with a lowercase s
+
+/********************************************
+                    WIP
+********************************************/
+
 #include "Defines.c"
 
 void sControl(S_PORT port, S_CONTROLLER_BUTTON button) {
