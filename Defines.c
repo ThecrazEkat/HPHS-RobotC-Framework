@@ -20,9 +20,9 @@ typedef enum {
   CH_2,
   CH_3,
   CH_4,
-} S_JOYSTICK
+} S_JOYSTICK;
 
 typedef enum {
   DEFAULT = 0,
   SLOW
-} S_CONTROL_ARG
+} S_CONTROL_ARG;

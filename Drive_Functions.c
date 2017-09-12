@@ -8,7 +8,6 @@
 
 void sControl(S_PORT port, S_JOYSTICK button, S_CONTROL_ARG cArg) {
 switch(cArg) {
-
 case DEFAULT: //==================================================//
     switch(port) {
         default:
