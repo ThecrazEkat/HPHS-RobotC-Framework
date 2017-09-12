@@ -29,7 +29,7 @@
 
 //Custom mods for good auton
 #include "Auton_Functions.c"
-#include "Defines.c"
+#include "Drive_Functions.c"
 
 /*---------------------------------------------------------------------------*/
 /*                          Pre-Autonomous Functions                         */
