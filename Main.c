@@ -1,5 +1,6 @@
 #pragma config(Sensor, dgtl1,  ,               sensorQuadEncoder)
 #pragma config(Sensor, dgtl3,  ,               sensorQuadEncoder)
+#pragma config(Sensor, dgtl5,  ,               sensorTouch)
 #pragma config(Motor,  port1,           leftM,         tmotorVex393_HBridge, openLoop, driveLeft, encoderPort, dgtl1)
 #pragma config(Motor,  port2,           motor2,        tmotorVex393_MC29, openLoop)
 #pragma config(Motor,  port3,           motor3,        tmotorVex393_MC29, openLoop)
@@ -30,6 +31,7 @@
 //Custom mods for good auton
 #include "Auton_Functions.c"
 #include "Drive_Functions.c"
+#include "Misc.c"
 
 /*---------------------------------------------------------------------------*/
 /*                          Pre-Autonomous Functions                         */
