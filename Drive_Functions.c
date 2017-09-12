@@ -13,565 +13,566 @@ void sControl(S_PORT port, S_CONTROLLER_BUTTON button) {
             printf("Error: Please specify a port number.");
             break;
 
-        case 1:
+        case PORT_1:
 
             switch(button) {
                 default:
                     printf("Error: Please specify a controller button/joystick channel");
                 	break;
-				case 1:
+				case CH_1:
                     motor[port1] = vexRT[Ch1];
                     break;
-				case 2:
+				case CH_2:
                     motor[port1] = vexRT[Ch2];
                     break;
-				case 3:
+				case CH_3:
                     motor[port1] = vexRT[Ch3];
                     break;
-				case 4:
+				case CH_4:
                     motor[port1] = vexRT[Ch4];
                     break;
-				case 5:
+				case BTN_7U:
                     motor[port1] = vexRT[Btn7U];
                     break;
-				case 6:
+				case BTN_7R:
                     motor[port1] = vexRT[Btn7R];
                     break;
-				case 7:
+				case BTN_7D:
                     motor[port1] = vexRT[Btn7D];
                     break;
-				case 8:
+				case BTN_7L:
                     motor[port1] = vexRT[Btn7L];
                     break;
-				case 9:
+				case BTN_8U:
                     motor[port1] = vexRT[Btn8U];
                     break;
-				case 10:
+				case BTN_8R:
                     motor[port1] = vexRT[Btn8R];
                     break;
-				case 11:
+				case BTN_8D:
                     motor[port1] = vexRT[Btn8D];
                     break;
-				case 12:
+				case BTN_8L:
                     motor[port1] = vexRT[Btn8L];
                     break;
-				case 13:
+				case BTN_5U:
                     motor[port1] = vexRT[Btn5U];
                     break;
-				case 14:
+				case BTN_5D:
                     motor[port1] = vexRT[Btn5D];
                     break;
-				case 15:
+				case BTN_6U:
                     motor[port1] = vexRT[Btn6U];
                     break;
-				case 16:
+				case BTN_6D:
                     motor[port1] = vexRT[Btn6D];
                     break;
             }
             break;
 		
-        case 2:
+        case PORT_2:
 
             switch(button) {
                 default:
                     printf("Error: Please specify a controller button/joystick channel");
                 	break;
-				case 1:
+				case CH_1:
                     motor[port2] = vexRT[Ch1];
                 	break;
-				case 2:
+				case CH_2:
                     motor[port2] = vexRT[Ch2];
                 	break;
-				case 3:
+				case CH_3:
                     motor[port2] = vexRT[Ch3];
                 	break;
-				case 4:
+				case CH_4:
                     motor[port2] = vexRT[Ch4];
                 	break;
-				case 5:
+				case BTN_7U:
                     motor[port2] = vexRT[Btn7U];
                 	break;
-				case 6:
+				case BTN_7R:
                     motor[port2] = vexRT[Btn7R];
                 	break;
-				case 7:
+				case BTN_7D:
                     motor[port2] = vexRT[Btn7D];
                 	break;
-				case 8:
+				case BTN_7L:
                     motor[port2] = vexRT[Btn7L];
                 	break;
-				case 9:
+				case BTN_8U:
                     motor[port2] = vexRT[Btn8U];
                 	break;
-				case 10:
+				case BTN_8R:
                     motor[port2] = vexRT[Btn8R];
                 	break;
-				case 11:
+				case BTN_8D:
                     motor[port2] = vexRT[Btn8D];
                 	break;
-				case 12:
+				case BTN_8L:
                     motor[port2] = vexRT[Btn8L];
                 	break;
-				case 13:
+				case BTN_5U:
                     motor[port2] = vexRT[Btn5U];
                 	break;
-				case 14:
+				case BTN_5D:
                     motor[port2] = vexRT[Btn5D];
                 	break;
-				case 15:
+				case BTN_6U:
                     motor[port2] = vexRT[Btn6U];
                 	break;
-				case 16:
+				case BTN_6D:
                     motor[port2] = vexRT[Btn6D];
             }
             break;
 				
-        case 3:
+        case PORT_3:
 
             switch(button) {
                 default:
                     printf("Error: Please specify a controller button/joystick channel");
                 	break;
-				case 1:
+				case CH_1:
                     motor[port3] = vexRT[Ch1];
                 	break;
-				case 2:
+				case CH_2:
                     motor[port3] = vexRT[Ch2];
                 	break;
-				case 3:
+				case CH_3:
                     motor[port3] = vexRT[Ch3];
                 	break;
-				case 4:
+				case CH_4:
                     motor[port3] = vexRT[Ch4];
                 	break;
-				case 5:
+				case BTN_7U:
                     motor[port3] = vexRT[Btn7U];
                 	break;
-				case 6:
+				case BTN_7R:
                     motor[port3] = vexRT[Btn7R];
                 	break;
-				case 7:
+				case BTN_7D:
                     motor[port3] = vexRT[Btn7D];
                 	break;
-				case 8:
+				case BTN_7L:
                     motor[port3] = vexRT[Btn7L];
                 	break;
-				case 9:
+				case BTN_8U:
                     motor[port3] = vexRT[Btn8U];
                 	break;
-				case 10:
+				case BTN_8R:
                     motor[port3] = vexRT[Btn8R];
                 	break;
-				case 11:
+				case BTN_8D:
                     motor[port3] = vexRT[Btn8D];
                 	break;
-				case 12:
+				case BTN_8L:
                     motor[port3] = vexRT[Btn8L];
                 	break;
-				case 13:
+				case BTN_5U:
                     motor[port3] = vexRT[Btn5U];
                 	break;
-				case 14:
+				case BTN_5D:
                     motor[port3] = vexRT[Btn5D];
                 	break;
-				case 15:
+				case BTN_6U:
                     motor[port3] = vexRT[Btn6U];
                 	break;
-				case 16:
+				case BTN_6D:
                     motor[port3] = vexRT[Btn6D];
             }
             break;
 				
-        case 4:
+        case PORT_4:
 
             switch(button) {
                 default:
                     printf("Error: Please specify a controller button/joystick channel");
                 	break;
-				case 1:
+				case CH_1:
                     motor[port4] = vexRT[Ch1];
                 	break;
-				case 2:
+				case CH_2:
                     motor[port4] = vexRT[Ch2];
                 	break;
-				case 3:
+				case CH_3:
                     motor[port4] = vexRT[Ch3];
                 	break;
-				case 4:
+				case CH_4:
                     motor[port4] = vexRT[Ch4];
                 	break;
-				case 5:
+				case BTN_7U:
                     motor[port4] = vexRT[Btn7U];
                 	break;
-				case 6:
+				case BTN_7R:
                     motor[port4] = vexRT[Btn7R];
                 	break;
-				case 7:
+				case BTN_7D:
                     motor[port4] = vexRT[Btn7D];
                 	break;
-				case 8:
+				case BTN_7L:
                     motor[port4] = vexRT[Btn7L];
                 	break;
-				case 9:
+				case BTN_8U:
                     motor[port4] = vexRT[Btn8U];
                 	break;
-				case 10:
+				case BTN_8R:
                     motor[port4] = vexRT[Btn8R];
                 	break;
-				case 11:
+				case BTN_8D:
                     motor[port4] = vexRT[Btn8D];
                 	break;
-				case 12:
+				case BTN_8L:
                     motor[port4] = vexRT[Btn8L];
                 	break;
-				case 13:
+				case BTN_5U:
                     motor[port4] = vexRT[Btn5U];
                 	break;
-				case 14:
+				case BTN_5D:
                     motor[port4] = vexRT[Btn5D];
                 	break;
-				case 15:
+				case BTN_6U:
                     motor[port4] = vexRT[Btn6U];
                 	break;
-				case 16:
+				case BTN_6D:
                     motor[port4] = vexRT[Btn6D];
             }
             break;
 				
-        case 5:
+        case PORT_5:
 
             switch(button) {
                 default:
                     printf("Error: Please specify a controller button/joystick channel");
                 	break;
-				case 1:
+				case CH_1:
                     motor[port5] = vexRT[Ch1];
                 	break;
-				case 2:
+				case CH_2:
                     motor[port5] = vexRT[Ch2];
                 	break;
-				case 3:
+				case CH_3:
                     motor[port5] = vexRT[Ch3];
                 	break;
-				case 4:
+				case CH_4:
                     motor[port5] = vexRT[Ch4];
                 	break;
-				case 5:
+				case BTN_7U:
                     motor[port5] = vexRT[Btn7U];
                 	break;
-				case 6:
+				case BTN_7R:
                     motor[port5] = vexRT[Btn7R];
                 	break;
-				case 7:
+				case BTN_7D:
                     motor[port5] = vexRT[Btn7D];
                 	break;
-				case 8:
+				case BTN_7L:
                     motor[port5] = vexRT[Btn7L];
                 	break;
-				case 9:
+				case BTN_8U:
                     motor[port5] = vexRT[Btn8U];
                 	break;
-				case 10:
+				case BTN_8R:
                     motor[port5] = vexRT[Btn8R];
                 	break;
-				case 11:
+				case BTN_8D:
                     motor[port5] = vexRT[Btn8D];
                 	break;
-				case 12:
+				case BTN_8L:
                     motor[port5] = vexRT[Btn8L];
                 	break;
-				case 13:
+				case BTN_5U:
                     motor[port5] = vexRT[Btn5U];
                 	break;
-				case 14:
+				case BTN_5D:
                     motor[port5] = vexRT[Btn5D];
                 	break;
-				case 15:
+				case BTN_6U:
                     motor[port5] = vexRT[Btn6U];
                 	break;
-				case 16:
+				case BTN_6D:
                     motor[port5] = vexRT[Btn6D];
             }
             break;
 				
-        case 6:
+        case PORT_6:
 
             switch(button) {
                 default:
                     printf("Error: Please specify a controller button/joystick channel");
                 	break;
-				case 1:
+				case CH_1:
                     motor[port6] = vexRT[Ch1];
                 	break;
-				case 2:
+				case CH_2:
                     motor[port6] = vexRT[Ch2];
                 	break;
-				case 3:
+				case CH_3:
                     motor[port6] = vexRT[Ch3];
                 	break;
-				case 4:
+				case CH_4:
                     motor[port6] = vexRT[Ch4];
                 	break;
-				case 5:
+				case BTN_7U:
                     motor[port6] = vexRT[Btn7U];
                 	break;
-				case 6:
+				case BTN_7R:
                     motor[port6] = vexRT[Btn7R];
                 	break;
-				case 7:
+				case BTN_7D:
                     motor[port6] = vexRT[Btn7D];
                 	break;
-				case 8:
+				case BTN_7L:
                     motor[port6] = vexRT[Btn7L];
                 	break;
-				case 9:
+				case BTN_8U:
                     motor[port6] = vexRT[Btn8U];
                 	break;
-				case 10:
+				case BTN_8R:
                     motor[port6] = vexRT[Btn8R];
                 	break;
-				case 11:
+				case BTN_8D:
                     motor[port6] = vexRT[Btn8D];
                 	break;
-				case 12:
+				case BTN_8L:
                     motor[port6] = vexRT[Btn8L];
                 	break;
-				case 13:
+				case BTN_5U:
                     motor[port6] = vexRT[Btn5U];
                 	break;
-				case 14:
+				case BTN_5D:
                     motor[port6] = vexRT[Btn5D];
                 	break;
-				case 15:
+				case BTN_6U:
                     motor[port6] = vexRT[Btn6U];
                 	break;
-				case 16:
+				case BTN_6D:
                     motor[port6] = vexRT[Btn6D];
             }
             break;
 				
-        case 7:
+        case PORT_7:
 
             switch(button) {
                 default:
                     printf("Error: Please specify a controller button/joystick channel");
                 	break;
-				case 1:
+				case CH_1:
                     motor[port7] = vexRT[Ch1];
                 	break;
-				case 2:
+				case CH_2:
                     motor[port7] = vexRT[Ch2];
                 	break;
-				case 3:
+				case CH_3:
                     motor[port7] = vexRT[Ch3];
                 	break;
-				case 4:
+				case CH_4:
                     motor[port7] = vexRT[Ch4];
                 	break;
-				case 5:
+				case BTN_7U:
                     motor[port7] = vexRT[Btn7U];
                 	break;
-				case 6:
+				case BTN_7R:
                     motor[port7] = vexRT[Btn7R];
                 	break;
-				case 7:
+				case BTN_7D:
                     motor[port7] = vexRT[Btn7D];
                 	break;
-				case 8:
+				case BTN_7L:
                     motor[port7] = vexRT[Btn7L];
                 	break;
-				case 9:
+				case BTN_8U:
                     motor[port7] = vexRT[Btn8U];
                 	break;
-				case 10:
+				case BTN_8R:
                     motor[port7] = vexRT[Btn8R];
                 	break;
-				case 11:
+				case BTN_8D:
                     motor[port7] = vexRT[Btn8D];
                 	break;
-				case 12:
+				case BTN_8L:
                     motor[port7] = vexRT[Btn8L];
                 	break;
-				case 13:
+				case BTN_5U:
                     motor[port7] = vexRT[Btn5U];
                 	break;
-				case 14:
+				case BTN_5D:
                     motor[port7] = vexRT[Btn5D];
                 	break;
-				case 15:
+				case BTN_6U:
                     motor[port7] = vexRT[Btn6U];
                 	break;
-				case 16:
+				case BTN_6D:
                     motor[port7] = vexRT[Btn6D];
             }
             break;
 				
-        case 8:
+        case PORT_8:
 
             switch(button) {
                 default:
                     printf("Error: Please specify a controller button/joystick channel");
                 	break;
-				case 1:
+				case CH_1:
                     motor[port8] = vexRT[Ch1];
                 	break;
-				case 2:
+				case CH_2:
                     motor[port8] = vexRT[Ch2];
                 	break;
-				case 3:
+				case CH_3:
                     motor[port8] = vexRT[Ch3];
                 	break;
-				case 4:
+				case CH_4:
                     motor[port8] = vexRT[Ch4];
                 	break;
-				case 5:
+				case BTN_7U:
                     motor[port8] = vexRT[Btn7U];
                 	break;
-				case 6:
+				case BTN_7R:
                     motor[port8] = vexRT[Btn7R];
                 	break;
-				case 7:
+				case BTN_7D:
                     motor[port8] = vexRT[Btn7D];
                 	break;
-				case 8:
+				case BTN_7L:
                     motor[port8] = vexRT[Btn7L];
                 	break;
-				case 9:
+				case BTN_8U:
                     motor[port8] = vexRT[Btn8U];
                 	break;
-				case 10:
+				case BTN_8R:
                     motor[port8] = vexRT[Btn8R];
                 	break;
-				case 11:
+				case BTN_8D:
                     motor[port8] = vexRT[Btn8D];
                 	break;
-				case 12:
+				case BTN_8L:
                     motor[port8] = vexRT[Btn8L];
                 	break;
-				case 13:
+				case BTN_5U:
                     motor[port8] = vexRT[Btn5U];
                 	break;
-				case 14:
+				case BTN_5D:
                     motor[port8] = vexRT[Btn5D];
                 	break;
-				case 15:
+				case BTN_6U:
                     motor[port8] = vexRT[Btn6U];
                 	break;
-				case 16:
+				case BTN_6D:
                     motor[port8] = vexRT[Btn6D];
             }
             break;
 				
-        case 9:
+        case PORT_9:
 
             switch(button) {
                 default:
                     printf("Error: Please specify a controller button/joystick channel");
                 	break;
-				case 1:
+				case CH_1:
                     motor[port9] = vexRT[Ch1];
                 	break;
-				case 2:
+				case CH_2:
                     motor[port9] = vexRT[Ch2];
                 	break;
-				case 3:
+				case CH_3:
                     motor[port9] = vexRT[Ch3];
                 	break;
-				case 4:
+				case CH_4:
                     motor[port9] = vexRT[Ch4];
                 	break;
-				case 5:
+				case BTN_7U:
                     motor[port9] = vexRT[Btn7U];
                 	break;
-				case 6:
+				case BTN_7R:
                     motor[port9] = vexRT[Btn7R];
                 	break;
-				case 7:
+				case BTN_7D:
                     motor[port9] = vexRT[Btn7D];
                 	break;
-				case 8:
+				case BTN_7L:
                     motor[port9] = vexRT[Btn7L];
                 	break;
-				case 9:
+				case BTN_8U:
                     motor[port9] = vexRT[Btn8U];
                 	break;
-				case 10:
+				case BTN_8R:
                     motor[port9] = vexRT[Btn8R];
                 	break;
-				case 11:
+				case BTN_8D:
                     motor[port9] = vexRT[Btn8D];
                 	break;
-				case 12:
+				case BTN_8L:
                     motor[port9] = vexRT[Btn8L];
                 	break;
-				case 13:
+				case BTN_5U:
                     motor[port9] = vexRT[Btn5U];
                 	break;
-				case 14:
+				case BTN_5D:
                     motor[port9] = vexRT[Btn5D];
                 	break;
-				case 15:
+				case BTN_6U:
                     motor[port9] = vexRT[Btn6U];
                 	break;
-				case 16:
+				case BTN_6D:
                     motor[port9] = vexRT[Btn6D];
             }
             break;
 				
-        case 10:
+        case PORT_10:
 
             switch(button) {
                 default:
                     printf("Error: Please specify a controller button/joystick channel");
                 	break;
-				case 1:
+				case CH_1:
                     motor[port10] = vexRT[Ch1];
                 	break;
-				case 2:
+				case CH_2:
                     motor[port10] = vexRT[Ch2];
                 	break;
-				case 3:
+				case CH_3:
                     motor[port10] = vexRT[Ch3];
                 	break;
-				case 4:
+				case CH_4:
                     motor[port10] = vexRT[Ch4];
                 	break;
-				case 5:
+				case BTN_7U:
                     motor[port10] = vexRT[Btn7U];
                 	break;
-				case 6:
+				case BTN_7R:
                     motor[port10] = vexRT[Btn7R];
                 	break;
-				case 7:
+				case BTN_7D:
                     motor[port10] = vexRT[Btn7D];
                 	break;
-				case 8:
+				case BTN_7L:
                     motor[port10] = vexRT[Btn7L];
                 	break;
-				case 9:
+				case BTN_8U:
                     motor[port10] = vexRT[Btn8U];
                 	break;
-				case 10:
+				case BTN_8R:
                     motor[port10] = vexRT[Btn8R];
                 	break;
-				case 11:
+				case BTN_8D:
                     motor[port10] = vexRT[Btn8D];
                 	break;
-				case 12:
+				case BTN_8L:
                     motor[port10] = vexRT[Btn8L];
                 	break;
-				case 13:
+				case BTN_5U:
                     motor[port10] = vexRT[Btn5U];
                 	break;
-				case 14:
+				case BTN_5D:
                     motor[port10] = vexRT[Btn5D];
                 	break;
-				case 15:
+				case BTN_6U:
                     motor[port10] = vexRT[Btn6U];
                 	break;
-				case 16:
+				case BTN_6D:
                     motor[port10] = vexRT[Btn6D];
             }
             break;
     }
-}
+} // SYNTAX: sControl(S_PORT, S_CONTROLLER_BUTTON)
+  // OUTPUT: motor[S_PORT] = vexRT[S_CONTROLLER_BUTTON]
