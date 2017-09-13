@@ -60,6 +60,7 @@ void loop(S_STATUS status) {
 }
 
 void setTimer(int max, int current) {
+    clearTimer(T1);
     LOOP_MAX = max;
     LOOP_CURRENT = current;
 }
