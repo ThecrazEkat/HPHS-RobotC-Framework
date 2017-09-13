@@ -1,13 +1,48 @@
-//All custom functions will begin with a lowercase s
+/*
+MIT License
 
-//port1-port10
-//dgtl1-dgtl-12
+Copyright (c) 2017 Juan de Urtubey
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+//All custom functions will begin with a lowercase s
 
 /********************************************
                     WIP
 ********************************************/
 
 #include "Defines.c"
+
+// For debug purposes
+void phase(PHASE target) {
+  if(target < CURRENT_PHASE) {writeDebugStreamLine("ERROR: Target phase is lower than current phase.");}
+  if(target = CURRENT_PHASE) {writeDebugStreamLine("ERROR: Target phase is currently active, no change will take place");}
+  else {
+    CURRENT_PHASE = target;
+    LAST_PHASE = target - 1;
+    if(LAST_PHASE > 0) {writeDebugStreamLine("Successfully completed phase %d", LAST_PHASE);}
+    writeDebugStreamLine("Phase %d now active.", CURRENT_PHASE);
+  }
+}
+
+/* WARNING: The functions below have not yet been properly tested. Uncomment at your own risk.
 
 void switchOnPort(S_PORT portNum, int thisSpeed) {
       switch(portNum) {
@@ -290,12 +325,6 @@ int sDetect(S_SENSOR sensor, S_DGTL dgtl) {
   }
   return returnVar;
 }
-/*
-***EXAMPLE***
-while(sDetect(SONAR_SENS, DGTL_5) < 255 || sDetect(TOUCH_SENS, DGTL_6) == 1) {
-  sMove()
-}
-*/
 
 task main() {
   while(true) {
@@ -324,3 +353,4 @@ task main() {
     robot.value.dgtl1 = SensorValue(dgtl12);
   }
 }
+*/
