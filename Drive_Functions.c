@@ -473,6 +473,8 @@ case SLOW:  //==================================================//
 // SYNTAX: sControl(S_PORT, S_CONTROLLER_BUTTON, S_CONTROL_ARG)
 // OUTPUT: motor[S_PORT] = vexRT[S_CONTROLLER_BUTTON]
 
+
+/*
 void sControlWithLimit(int min, int max, char *dgtl) {
 	if(max < min) {
 		min = min ^ max;
@@ -486,3 +488,4 @@ void sControlWithLimit(int min, int max, char *dgtl) {
 		}
 	}
 }
+*/
