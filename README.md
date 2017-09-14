@@ -5,6 +5,10 @@ To use, simply `#include "HPHS_RobotC_Framework.c"` in your competition template
 ## List of functions with arguments
 ### Auton_Functions.c
 - phase(PHASE)
+- //sMove(int, int, S_PORT, S_PORT, S_PORT, S_PORT)
+- //sStopPort(S_PORT)
+- //sStopAll()
+- //sDetect(S_SENSOR, S_DGTL)
 ### Drive_Functions.c
 - sControl(S_PORT, S_JOYSTICK, S_CONTROL_ARG)
 ### Misc.c
