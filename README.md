@@ -2,7 +2,7 @@
 Really early beta, so assume most things will be broken.  
 To use, simply `#include "HPHS_RobotC_Framework.c"` in your competition template file.
 
-## List of functions with arguments
+## List of functions with arguments (// = not tested)
 ### Auton_Functions.c
 - phase(PHASE)
 - //sMove(int, int, S_PORT, S_PORT, S_PORT, S_PORT)
