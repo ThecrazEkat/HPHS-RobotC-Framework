@@ -42,6 +42,12 @@ void phase(PHASE target) {
   }
 }
 
+void sStopAll() {
+  for(int i = 1; i < 11; i++) {
+    motor[port+i] = 0;
+  }
+}
+
 /* WARNING: The functions below have not yet been properly tested. Uncomment at your own risk.
 
 void switchOnPort(S_PORT portNum, int thisSpeed) {
@@ -139,12 +145,6 @@ void sStopPort(S_PORT portNum) {
           motor[port10] = 0;
           break;
       }
-}
-
-void sStopAll() {
-  for(int i = 1; i < 11; i++) {
-    motor[port+i] = 0;
-  }
 }
 
 int sDetect(S_SENSOR sensor, S_DGTL dgtl) {
