@@ -472,3 +472,17 @@ case SLOW:  //==================================================//
 } 
 // SYNTAX: sControl(S_PORT, S_CONTROLLER_BUTTON, S_CONTROL_ARG)
 // OUTPUT: motor[S_PORT] = vexRT[S_CONTROLLER_BUTTON]
+
+void sControlWithLimit(int min, int max, char *dgtl) {
+	if(max < min) {
+		min = min ^ max;
+		max = max ^ min;
+		min = min ^ max;
+	}
+	while(true) {
+		untilTouch(*dgtl);
+		while(sensorValue(*dgtl) == 1) {
+			sStopAll();
+		}
+	}
+}
