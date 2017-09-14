@@ -65,18 +65,6 @@ void setTimer(int max, int current) {
     LOOP_CURRENT = current;
 }
 
-//To use loops easily just place them inside a while function like so:
-/*
-while(LOOP_CURRENT < LOOP_MAX) {
-    //STUFF
-
-    //Infinite loop:
-    infiniteLoop();
-
-    //Cancel infinite loop for whatever reason:
-    loop(OFF);
-
-    //To turn back on:
-    loop(ON);
+int round(float number) {
+    return (number >= 0) ? (int)(number + 0.5) : (int)(number - 0.5);
 }
-*/
