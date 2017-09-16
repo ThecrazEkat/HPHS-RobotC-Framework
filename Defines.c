@@ -22,25 +22,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#define LOOP_MAX
-#define LOOP_CURRENT timer1[T1]
+int loopMax;
+#define LOOP_CURRENT time1[T1]
 
-#define CURRENT_PHASE
-#define LAST_PHASE
+int currentPhase = 0;
+int lastPhase;
 
 typedef enum controlArgs {
   DEFAULT = 0,
   SLOW
 } S_CONTROL_ARG;
-
-typedef enum sensors {
-  NO_SENS = 0,
-
-  TOUCH_SENS,
-  LIGHT_SENS,
-  SOUND_SENS,
-  SONAR_SENS
-} S_SENSOR;
 
 typedef enum statuses {
   DISABLED = -1,

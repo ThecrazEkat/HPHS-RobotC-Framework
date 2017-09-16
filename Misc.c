@@ -23,11 +23,7 @@ SOFTWARE.
 */
 
 #include "Defines.c"
-
-void defineRobot(char *name, int model) {
-    robot.name = *name;
-    robot.modelNo = model;
-}
+bool loopStatus;
 
 int limit(int min, int val, int max) {
     if(min > max) {
@@ -35,16 +31,15 @@ int limit(int min, int val, int max) {
         max = max ^ min;
         min = min ^ max;
     }
-    if(input < min) {val = min;}
-    if(input > max) {val = max;}
+    if(val < min) {val = min;}
+    if(val > max) {val = max;}
+    return val;
 }
-
-bool loopStatus;
 
 void infiniteLoop() {
     loopStatus = true;
-    while(LOOP_MAX < LOOP_CURRENT - 2 || loopStatus) {
-        LOOP_CURRENT = 0;
+    if(LOOP_CURRENT < loopMax-1) {
+    	LOOP_CURRENT = 0;
     }
 }
 
@@ -61,7 +56,7 @@ void loop(S_STATUS status) {
 
 void setTimer(int max, int current) {
     clearTimer(T1);
-    LOOP_MAX = max;
+    loopMax = max;
     LOOP_CURRENT = current;
 }
 

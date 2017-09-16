@@ -32,18 +32,11 @@ SOFTWARE.
 
 // For debug purposes
 void nextPhase() {
-  if(CURRENT_PHASE <= 0 || typef(CURRENT_PHASE) == "undefined") {
-    CURRENT_PHASE = 0;
+  if(currentPhase <= 0) {
     writeDebugStream("Initializing phases.");
   }
-  CURRENT_PHASE++;
-  writeDebugStream("Initializing phase %d", CURRENT_PHASE);
-}
-
-void sStopAll() {
-  for(int i = 1; i < 11; i++) {
-    motor[port+i] = 0;
-  }
+  currentPhase++;
+  writeDebugStream("Initializing phase %d", currentPhase);
 }
 
 /* WARNING: The functions below have not yet been properly tested. Uncomment at your own risk.
