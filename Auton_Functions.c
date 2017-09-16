@@ -31,15 +31,12 @@ SOFTWARE.
 #include "Defines.c"
 
 // For debug purposes
-void phase(PHASE target) {
-  if(target < CURRENT_PHASE) {writeDebugStreamLine("ERROR: Target phase is lower than current phase.");}
-  if(target = CURRENT_PHASE) {writeDebugStreamLine("ERROR: Target phase is currently active, no change will take place");}
-  else {
-    CURRENT_PHASE = target;
-    LAST_PHASE = target - 1;
-    if(LAST_PHASE > 0) {writeDebugStreamLine("Successfully completed phase %d", LAST_PHASE);}
-    writeDebugStreamLine("Phase %d now active.", CURRENT_PHASE);
+void nextPhase() {
+  if(CURRENT_PHASE <= 0) {
+    writeDebugStream("Initializing phases.");
   }
+  CURRENT_PHASE++;
+  writeDebugStream("Initializing phase %d", CURRENT_PHASE);
 }
 
 void sStopAll() {
