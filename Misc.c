@@ -38,8 +38,10 @@ int limit(int min, int val, int max) {
 
 void infiniteLoop() {
     loopStatus = true;
-    if(LOOP_CURRENT < loopMax-1) {
-    	LOOP_CURRENT = 0;
+    while(loopstatus) {
+        if(LOOP_CURRENT >= loopMax-5) {
+    	    LOOP_CURRENT = 0;
+        }
     }
 }
 
