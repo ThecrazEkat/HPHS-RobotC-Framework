@@ -28,60 +28,6 @@ SOFTWARE.
 #define CURRENT_PHASE
 #define LAST_PHASE
 
-typedef enum phases {
-  PHASE_1,
-  PHASE_2,
-  PHASE_3,
-  PHASE_4,
-  PHASE_5,
-  PHASE_6,
-  PHASE_7,
-  PHASE_8,
-  PHASE_9,
-  PHASE_10
-} PHASE
-
-typedef enum ports {
-  NO_PORT = 0,
-
-  PORT_1,
-  PORT_2,
-  PORT_3,
-  PORT_4,
-  PORT_5,
-  PORT_6,
-  PORT_7,
-  PORT_8,
-  PORT_9,
-  PORT_10
-} S_PORT;
-
-typedef enum dgtlPorts {
-  NO_DGTL = 0,
-
-  DGTL_1,
-  DGTL_2,
-  DGTL_3,
-  DGTL_4,
-  DGTL_5,
-  DGTL_6,
-  DGTL_7,
-  DGTL_8,
-  DGTL_9,
-  DGTL_10,
-  DGTL_11,
-  DGTL_12
-} S_DGTL
-
-typedef enum controls {
-  NO_JOY = 0,
-
-  CH_1,
-  CH_2,
-  CH_3,
-  CH_4,
-} S_JOYSTICK;
-
 typedef enum controlArgs {
   DEFAULT = 0,
   SLOW
