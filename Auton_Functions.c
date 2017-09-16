@@ -33,10 +33,10 @@ SOFTWARE.
 // For debug purposes
 void nextPhase() {
   if(currentPhase <= 0) {
-    writeDebugStream("Initializing phases.");
+    writeDebugStreamLine("Initializing phases.");
   }
   currentPhase++;
-  writeDebugStream("Initializing phase %d", currentPhase);
+  writeDebugStreamLine("Initializing phase %d", currentPhase);
 }
 
 /* WARNING: The functions below have not yet been properly tested. Uncomment at your own risk.
