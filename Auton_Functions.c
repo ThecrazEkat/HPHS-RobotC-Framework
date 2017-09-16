@@ -32,7 +32,8 @@ SOFTWARE.
 
 // For debug purposes
 void nextPhase() {
-  if(CURRENT_PHASE <= 0) {
+  if(CURRENT_PHASE <= 0 || typef(CURRENT_PHASE) == "undefined") {
+    CURRENT_PHASE = 0;
     writeDebugStream("Initializing phases.");
   }
   CURRENT_PHASE++;
