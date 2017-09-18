@@ -63,7 +63,7 @@ void setTimer(int max, int current) {
 }
 
 bool checkLoop() {
-    retrun (LOOP_CURRENT <= loopMax);
+    return (LOOP_CURRENT <= loopMax);
 }
 
 int sRound(float number) {
